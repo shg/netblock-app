@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000012 /* FilterExtension/FilterDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000005 /* FilterExtension/FilterDataProvider.swift */; };
+		000000000000000000000013 /* FilterExtension/main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000006 /* FilterExtension/main.swift */; };
+		000000000000000000000014 /* Shared/DomainRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000004 /* Shared/DomainRules.swift */; };
+		000000000000000000000019 /* org.kakera.netblock.app.filter.systemextension in Embed System Extension */ = {isa = PBXBuildFile; fileRef = 000000000000000000000008 /* org.kakera.netblock.app.filter.systemextension */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		00000000000000000000001E /* NetBlock/NetBlockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000001 /* NetBlock/NetBlockApp.swift */; };
+		00000000000000000000001F /* NetBlock/FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000002 /* NetBlock/FilterController.swift */; };
+		000000000000000000000020 /* NetBlock/ProxySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000003 /* NetBlock/ProxySettings.swift */; };
+		000000000000000000000021 /* Shared/DomainRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000004 /* Shared/DomainRules.swift */; };
+		A10000000000000000000001 = {isa = PBXBuildFile; fileRef = A10000000000000000000002; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000000000000000000000017 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00000000000000000000007A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000000000016;
+			remoteInfo = NetBlockFilter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00000000000000000000001A /* Embed System Extension */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Library/SystemExtensions";
+			dstSubfolderSpec = 16;
+			files = (
+				000000000000000000000019 /* org.kakera.netblock.app.filter.systemextension in Embed System Extension */,
+			);
+			name = "Embed System Extension";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000001 /* NetBlock/NetBlockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetBlock/NetBlockApp.swift; sourceTree = "<group>"; };
+		000000000000000000000002 /* NetBlock/FilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetBlock/FilterController.swift; sourceTree = "<group>"; };
+		000000000000000000000003 /* NetBlock/ProxySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetBlock/ProxySettings.swift; sourceTree = "<group>"; };
+		000000000000000000000004 /* Shared/DomainRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared/DomainRules.swift; sourceTree = "<group>"; };
+		000000000000000000000005 /* FilterExtension/FilterDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterExtension/FilterDataProvider.swift; sourceTree = "<group>"; };
+		000000000000000000000006 /* FilterExtension/main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterExtension/main.swift; sourceTree = "<group>"; };
+		000000000000000000000007 /* NetBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = NetBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000008 /* org.kakera.netblock.app.filter.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.system-extension"; path = org.kakera.netblock.app.filter.systemextension; sourceTree = BUILT_PRODUCTS_DIR; };
+		00000000000000000000000A /* NetBlock/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NetBlock/Info.plist; sourceTree = "<group>"; };
+		00000000000000000000000B /* NetBlock/NetBlock.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NetBlock/NetBlock.entitlements; sourceTree = "<group>"; };
+		00000000000000000000000C /* FilterExtension/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FilterExtension/Info.plist; sourceTree = "<group>"; };
+		00000000000000000000000D /* FilterExtension/FilterExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FilterExtension/FilterExtension.entitlements; sourceTree = "<group>"; };
+		A10000000000000000000002 = {isa = PBXFileReference; lastKnownFileType = image.icns; path = NetBlock/Assets/NetBlock.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		000000000000000000000009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000007 /* NetBlock.app */,
+				000000000000000000000008 /* org.kakera.netblock.app.filter.systemextension */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00000000000000000000000E = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000001 /* NetBlock/NetBlockApp.swift */,
+				000000000000000000000002 /* NetBlock/FilterController.swift */,
+				000000000000000000000003 /* NetBlock/ProxySettings.swift */,
+				000000000000000000000004 /* Shared/DomainRules.swift */,
+				000000000000000000000005 /* FilterExtension/FilterDataProvider.swift */,
+				000000000000000000000006 /* FilterExtension/main.swift */,
+				A10000000000000000000002,
+				00000000000000000000000A /* NetBlock/Info.plist */,
+				00000000000000000000000B /* NetBlock/NetBlock.entitlements */,
+				00000000000000000000000C /* FilterExtension/Info.plist */,
+				00000000000000000000000D /* FilterExtension/FilterExtension.entitlements */,
+				000000000000000000000009 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A10000000000000000000003 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001,); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000016 /* NetBlockFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000011 /* Build configuration list for PBXNativeTarget "NetBlockFilter" */;
+			buildPhases = (
+				000000000000000000000015 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetBlockFilter;
+			productName = org.kakera.netblock.app.filter;
+			productReference = 000000000000000000000008 /* org.kakera.netblock.app.filter.systemextension */;
+			productType = "com.apple.product-type.system-extension";
+		};
+		000000000000000000000023 /* NetBlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00000000000000000000001D /* Build configuration list for PBXNativeTarget "NetBlock" */;
+			buildPhases = (
+				000000000000000000000022 /* Sources */,
+				A10000000000000000000003,
+				00000000000000000000001A /* Embed System Extension */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000000000000000000018 /* PBXTargetDependency */,
+			);
+			name = NetBlock;
+			productName = NetBlock;
+			productReference = 000000000000000000000007 /* NetBlock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00000000000000000000007A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 2630;
+			};
+			buildConfigurationList = 000000000000000000000026 /* Build configuration list for PBXProject "NetBlock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00000000000000000000000E;
+			productRefGroup = 000000000000000000000009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000023 /* NetBlock */,
+				000000000000000000000016 /* NetBlockFilter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000015 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000012 /* FilterExtension/FilterDataProvider.swift in Sources */,
+				000000000000000000000013 /* FilterExtension/main.swift in Sources */,
+				000000000000000000000014 /* Shared/DomainRules.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00000000000000000000001E /* NetBlock/NetBlockApp.swift in Sources */,
+				00000000000000000000001F /* NetBlock/FilterController.swift in Sources */,
+				000000000000000000000020 /* NetBlock/ProxySettings.swift in Sources */,
+				000000000000000000000021 /* Shared/DomainRules.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000000000000000000000018 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000000000000000000000016 /* NetBlockFilter */;
+			targetProxy = 000000000000000000000017 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00000000000000000000000F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = FilterExtension/FilterExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FilterExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.kakera.netblock.app.filter;
+				PRODUCT_MODULE_NAME = NetBlockFilter;
+				PRODUCT_NAME = org.kakera.netblock.app.filter;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		000000000000000000000010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = FilterExtension/FilterExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FilterExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.kakera.netblock.app.filter;
+				PRODUCT_MODULE_NAME = NetBlockFilter;
+				PRODUCT_NAME = org.kakera.netblock.app.filter;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		00000000000000000000001B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = NetBlock/NetBlock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NetBlock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.kakera.netblock.app;
+				PRODUCT_NAME = NetBlock;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		00000000000000000000001C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = NetBlock/NetBlock.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NetBlock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.kakera.netblock.app;
+				PRODUCT_NAME = NetBlock;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		000000000000000000000024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		000000000000000000000025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000011 /* Build configuration list for PBXNativeTarget "NetBlockFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000000F /* Debug */,
+				000000000000000000000010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00000000000000000000001D /* Build configuration list for PBXNativeTarget "NetBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000001B /* Debug */,
+				00000000000000000000001C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000026 /* Build configuration list for PBXProject "NetBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000024 /* Debug */,
+				000000000000000000000025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00000000000000000000007A /* Project object */;
+}

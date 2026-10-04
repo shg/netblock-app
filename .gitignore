@@ -1,0 +1,27 @@
+.DS_Store
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# Local signing credentials and provisioning profiles
+*.p12
+*.pfx
+*.pem
+*.key
+*.cer
+*.mobileprovision
+*.provisionprofile
+
+# Local configuration, diagnostic data, and distribution artifacts
+.env
+.env.*
+!.env.example
+*.xcarchive/
+*.app/
+*.dSYM/
+*.ipa
+*.dmg
+*.pkg
+*.log
+proxy-recovery.json
